@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="zoo shelter donaciones a refugios de animales o personas que cuidan animales">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Zoo Shelter</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="import" href="">
+        <script src="bower_components/platform/platform.js">
+        </script>
+
+        <link rel="import" href="bower_components/font-roboto/roboto.html">
+        <link rel="import" href="bower_components/core-icons/core-icons.html">
+        <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+        <link rel="import" href="bower_components/core-media-query/core-media-query.html">
+        <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+
+        <style type="text/css">
+    core-toolbar {
+      color: #f1f1f1;
+      fill: #f1f1f1;
+    }
+
+        </style>
+
+    </head>
+    <body>
+        
+            <core-toolbar class="tall" style="background: #0f9d58;">
+                <paper-icon-button icon="menu"></paper-icon-button>
+                    <span flex>
+ 
+                    <!-- Logo and description
+                        <div id="logo">
+                            <a href="#0">
+                                <img src="img/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                        <h1>Zoo Shelter CR</h1>
+     -->
+
+
+                    </span>
+                <paper-icon-button icon="refresh"></paper-icon-button>
+                <paper-icon-button icon="more-vert"></paper-icon-button>
+            </core-toolbar>
+
+       <!-- </header>
+       
+
+        <div id="cd-nav">
+            <a href="#0" class="nav-trigger">Menu<span></span></a>
+
+
+            Main Navigation
+
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#0">Homepage</a></li>
+                    <li><a href="#0">Services</a></li>
+                    <li><a href="#0">Portfolio</a></li>
+                    <li><a href="#0">Pricing</a></li>
+                    <li><a href="#0">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+           gallery-items 
+            <ul id="items" class="container">
+                <li>
+                    <img src="">
+                    <div id="goal"></div>
+                    <div id="goal"></div>
+                    <div id="loader"></div>
+                </li>
+
+            </ul>  gallery-items -->
+        </main>
+         <core-media-query id="mediaQuery" query="max-width: 800px"></core-media-query>
+  
+  <script>
+  
+    document.querySelector('#mediaQuery').addEventListener('core-media-change',
+      function(e) {
+        document.body.classList.toggle('core-narrow', e.detail.matches);
+      });
+  
+  </script>
+    </body>
+</html>
