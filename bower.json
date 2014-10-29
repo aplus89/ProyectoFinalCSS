@@ -1,0 +1,26 @@
+{
+  "name": "ProyectoFinalCSS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aplus89/ProyectoFinalCSS",
+  "authors": [
+    "Andres Castanaza Molina <andrescm77@hotmail.com>"
+  ],
+  "description": "zooshelter",
+  "keywords": [
+    "zoo",
+    "shelter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "polymer/paper-elements#~0.4.2",
+    "core-elements": "polymer/core-elements#~0.4.2",
+    "polymer": "Polymer/polymer#~0.4.2"
+  }
+}
