@@ -1,90 +1,94 @@
     html,body {
         width: 100%;
-        margin: 0;
+        margin: 0px;
+        top: 0px;
+        margin-top: 0px;
         background-color: #E5E5E5;
         font-family: 'RobotoDraft', sans-serif;
     }
 
-    core-toolbar {
+    a, a:active, a:link, a:visited {
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .medium-tall {
         background: #03a9f4;
         color: white;
         padding: 0;
-        position: relative;
-        top: inherit;
-        z-index: 1;
-
-    }
-
-
-    #tabs {
-        width: auto;
         margin: 0;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        z-index: 1;
+        width: 100%;
+        margin-bottom: 12px;
+        margin-top: 0;
+
     }
+
+    .medium-tall ul li {
+        display: inline-block;
+        padding: 0 3em 0 3em;
+        line-height: 3em;
+    }
+
+    .medium-tall ul li:hover {
+        background-color: #2F3E9E;
+    }
+
   
 
-   paper-tabs, core-toolbar {
-      background-color: #00bcd4;
-      color: #fff;
-      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
-    }
-    
-    core-toolbar paper-tabs {
-      box-shadow: none;
-    }
-    
-    paper-tabs[noink][nobar] paper-tab.core-selected {
-      color: #ffff8d;
-    }
 
- section {
-      display: inline-block;
-      margin: 16px;
-      position: relative;
-    }
-
-table {
+#load_bar {
     background: black;
     width:  100%;
     height: 6px;
 
 }
 
-    .card {
-      background-color: white;
-      width: 420px;
-      height: 360px;
-      margin: 3em;
+section {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+    .card {        
+        background-color: white;
+        width: 480px;
+        height: 360px;
     }
+
+        .img_proyect {
+            height: 100%;
+            width: 100%;
+        }
+
+        .percentage {
+            margin: 0px;
+            color: #fff;
+            font-size: 5em;
+            position: absolute;
+            top: 45%;
+            z-index: 1;
+        }
 
     .helpers {
         width: 33.3%;
         height: 33.3%;
         background-color: red;
-        margin-left: 100%;
+        display: block;
+
     }
 
     .time {
         width: 33.3%;
         height: 33.3%;
         background-color: blue;
-        margin-left: 100%;
     }
 
     .goal {
         width: 33.3%;
         height: 33.3%;
         background-color: green;
-        margin-left: 100%;
     }
-    .percentage p {
-        margin: 0px;
-        top: -11em;
-        color: black;
-        font-size: 5em;
 
-    }
+
