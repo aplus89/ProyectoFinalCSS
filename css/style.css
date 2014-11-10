@@ -1,15 +1,36 @@
     html,body {
+        background-color: #E5E5E5;
         width: 100%;
         margin: 0px;
         top: 0px;
         margin-top: 0px;
-        background-color: #E5E5E5;
+        margin-left: 0px;
+        margin-right: 0px;
         font-family: 'RobotoDraft', sans-serif;
     }
 
     a, a:active, a:link, a:visited {
         text-decoration: none;
         color: #fff;
+    }
+
+    section {
+        margin-top: 3em;
+        display: inline-block;
+
+    }
+
+    ul, li, p {
+        list-style: none;
+        padding: 0px;
+        margin-left: 0px;
+        margin: 0px;
+    }
+
+    p {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
 
     }
 
@@ -19,10 +40,11 @@
         padding: 0;
         margin: 0;
         letter-spacing: 0.025em;
-        z-index: 1;
+        z-index: 10;
         width: 100%;
         margin-bottom: 12px;
-        margin-top: 0;
+        position: fixed;
+        display: block;
 
     }
 
@@ -36,59 +58,569 @@
         background-color: #2F3E9E;
     }
 
-  
-
-
-#load_bar {
-    background: black;
-    width:  100%;
-    height: 6px;
-
-}
-
-section {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-    .card {        
-        background-color: white;
-        width: 480px;
-        height: 360px;
+    #banner {
+        background: url(img/sloth.jpg) no-repeat center center fixed;
+        background-color: #4BAE4F;
+        width: auto;
+        height: 350px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
+        #banner img {
+            width: 12%;
+            padding: 1em;
+            position: inherit;
+            display: block;
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #banner p {
+            text-align: auto;
+            color: #fff;
+            font-family: roboto;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+
+    .card {
+        background-color: #fff;
+        width: 480px;
+        height: 360px;
+        display: inline-block;
+        margin: 3em;
+        position: relative;
+
+    }
+
+
+
         .img_proyect {
+            width: 100%;
             height: 100%;
+            position: absolute;
+        }
+
+            .img_proyect:hover {
+                opacity: 0.4;
+                filter: alpha(opacity=40);
+            }
+
+        .load_bar {
+            background-color: #EDFF40;
+            width:  100%;
+            height: 6px;
+        }
+            .full {
+                background-color: #75FF02;
+                height: 6px;
+                width:  55%;
+            }
+
+        .lateral_info {
+            list-style: none;
+            width: 24%;
+            height: 100%;
+            position: relative;
+
+        }
+
+            .helpers {
+                width: 100%;
+                height: 33.33%;
+                background-color: #679E37;
+                color: #fff;
+                text-align: middle;
+                display: table;
+                padding-top: 1em;
+            }
+
+                .helpers p {
+                    font-size: 3em;
+                    display: block;
+                }
+
+                .helpers p:nth-child(2){
+                    margin-top: 1em;
+                    font-size: 1em;
+                }
+
+            .time {
+                width: 100%;
+                height: 33.33%;
+                background-color: #378D3B;
+                color: #fff;
+                text-align: middle;
+                display: table;
+                padding-top: 1em;
+            }
+
+                .time p {
+                    font-size: 3em;
+                    display: block;
+                }
+
+                .time p:nth-child(2){
+                    margin-top: 1em;
+                    font-size: 1em;
+                } 
+
+            .goal {
+                width: 100%;
+                height: 33.33%;
+                background-color: #4BAE4F;
+                color: #fff;
+                text-align: middle;
+                display: table;
+                padding-top: 1em;
+            }
+
+                .goal:hover {
+                    background-color: #3FC3FF;
+                }
+
+                .goal p {
+                    font-size: 1.5em;
+                    margin-left: 1px;
+                }
+
+                .goal .currency {
+                    margin-right: 1px;
+                }
+
+/**footer**/
+footer {
+    background-color: #785447;
+    width: auto;
+    height: 55px;
+    color: #fff;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+/**CSS para proyectos.html**/
+#proyect_perfil {
+    width: 100%;
+}
+
+#perfil {
+    margin-top: -120px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#banner_proyect {
+    width: 100%;
+    height: 350px;
+}
+    #banner_proyect img {
+    width: 100%;
+    height: 100%;
+    }
+
+    .info_perfil {
+        width: 200px;
+        height: 100%;
+        margin-right: 4em;
+        position: relative;
+        display: inline-block;
+    }
+
+        .perfil_picture {
             width: 100%;
         }
 
-        .percentage {
-            margin: 0px;
-            color: #fff;
-            font-size: 5em;
-            position: absolute;
-            top: 45%;
-            z-index: 1;
+        .social_perfil {
+            background-color: #ADD480;
+            width: 100%;
+            height: 900px;
         }
 
-    .helpers {
-        width: 33.3%;
-        height: 33.3%;
-        background-color: red;
-        display: block;
+        .info_perfil p {
+            color: #fff;
+            position: absolute;
+            font-size: 3em;
+            margin: 1em;
+            display: block;
+        }
 
+        .info_perfil .currency {
+            color: #fff;
+            font-size: 1em;
+            position: absolute;
+        }
+
+.timeline {
+    background-color: #3FC3FF;
+    color: #fff;
+    width: 60%;
+    padding: 3em;
+    position: absolute;
+    display: inline-block;
+    margin-top: 140px;
+    text-align: left;
+    vertical-align: left;
+}
+
+/**CSS para about.html**/
+
+section h1, h2 {
+    font-size: 3em;
+}
+
+#about {
+    background-color: #3FC3FF;
+    color: #fff;
+    width: 72%;
+    padding: 3em;
+    display: block;
+    margin-top: 140px;
+    text-align: left;
+    vertical-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/**CSS para donate.html**/
+.donateContainer{
+    position: relative;
+    width: 207px;
+    margin: auto;
+  margin-top: 100px;
+}
+.donate{
+    margin: auto;
+    position: relative;
+    height: 82px;
+    width: 160px;
+    z-index: 2;
+    display: block;
+  }
+  .donate:hover + .rays {
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    margin-top: -105px;
     }
+.rays{
+    transform-origin:center;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+  top: 50%; right: 0; left: 0; bottom: 0;
+  margin: auto;
+  margin-top: -30px;
+    z-index: 1;
+  opacity: 0;
+  transition: .5s ease-out;
+  animation: godrays 10s ease-in-out alternate infinite;
+  }
 
-    .time {
-        width: 33.3%;
-        height: 33.3%;
-        background-color: blue;
+@keyframes godrays{
+    to {
+        transform: rotate(360deg);
     }
+}
 
-    .goal {
-        width: 33.3%;
-        height: 33.3%;
-        background-color: green;
-    }
+svg {
+  $s: 100px;
+  display: inline-block;
+  width: $s;
+  height: $s;
+  margin: 0 10px;
+}
 
 
+/**/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+
+address {
+  font-size: 13px;
+  line-height: 140%;
+}
+
+
+.donationCard {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 50px;
+  max-width: 700px;
+  min-width: 240px;
+  width: 80%;
+}
+@media all and (max-width: 640px) {
+  .donationCard .donationCard {
+    width: 90%;
+  }
+}
+.donationCard input, .donationCard select {
+  border: 1px solid #DDD;
+  border-radius: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  height: 40px;
+  margin: 0 10px 0 5px;
+  padding: 0 5px;
+  width: 80px;
+}
+.donationCard select {
+  padding: 5px;
+  -webkit-appearance: none;
+}
+@media all and (max-width: 640px) {
+  .donationCard input {
+    width: 60px;
+  }
+}
+.donationCard .amount {
+  background: #096DC9;
+  border-radius: 4px 4px 0 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 80px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.donationCard .amount input {
+  border-color: #053A68;
+  border-radius: 5px;
+  font-size: 28px;
+  height: 50px;
+}
+@media all and (max-width: 640px) {
+  .donationCard .amount .custom-hidden {
+    display: none;
+  }
+}
+@media all and (max-width: 30em) {
+  .donationCard .amount {
+    text-align: center;
+  }
+  .donationCard .amount .phone-hidden {
+    display: none;
+  }
+}
+.donationCard .options {
+  background: #FAFAFA;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  padding: 20px;
+}
+.donationCard .options label {
+  color: #333;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.donationCard .options label.subscribe {
+  padding-top: 30px;
+}
+.donationCard .options label.subscribe input, .donationCard .options label.subscribe p {
+  float: left;
+}
+.donationCard .options label.subscribe input {
+  margin: 6px 8px;
+}
+.donationCard .options label.subscribe p {
+  font-size: 11px;
+  max-width: 80%;
+}
+.donationCard .options fieldset.sm {
+  float: left;
+  width: 49%;
+}
+.donationCard .options fieldset.sm:nth-of-type(odd) {
+  margin-right: 2%;
+}
+.donationCard .options .ccard {
+  border-top: 1px dashed #CCC;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.donationCard .options input, .donationCard .options select {
+  display: block;
+  margin: 0 0 12px;
+  width: 100%;
+}
+.donationCard .options input[type="checkbox"] {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+.donationCard .options input[type="checkbox"] + p {
+  float: left;
+}
+.donationCard .options button {
+  background: #09C66E;
+  border: 1px solid #06894C;
+  border-radius: 4px;
+  color: white;
+  clear: both;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 10px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.donationCard .options button.donate {
+  background: #F8A11C;
+  border-color: #BC7A16;
+  box-shadow: inset 0 1px 2px #FC0, inset 0 -1px 2px #FC0;
+  font-size: 14px;
+  height: 30px;
+  margin-top: 0;
+}
+.donationCard .options aside:first-child {
+  border-right: 1px solid #CCC;
+  float: left;
+  padding-right: 20px;
+  width: 60%;
+}
+.donationCard .options .other {
+  float: left;
+  padding-left: 20px;
+  text-align: center;
+  width: 40%;
+}
+.donationCard .options .other ul h4 {
+  font-family: "Lato",Tahoma,Helvetica,Arial,sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.donationCard .options .other ul h4 ~ p {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: left;
+}
+.donationCard .options .other li:not(:last-child) {
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@media all and (max-width: 480px) {
+  .donationCard .options aside:first-child, .donationCard .options .other {
+    border-right: 0 none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .donationCard .options aside:first-child {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/**CSS para login.html**/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+*{margin:0;padding:0;}
+
+
+.button{
+  width:100px;
+  background:#3399cc;
+  display:block;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.button:hover{
+  background:#2288bb;
+}
+
+#login{
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+#triangle{
+  width:0;
+  border-top:12x solid transparent;
+  border-right:12px solid transparent;
+  border-bottom:12px solid #3399cc;
+  border-left:12px solid transparent;
+  margin:0 auto;
+}
+
+#login h1{
+  background:#3399cc;
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+
+form{
+  background:#f0f0f0;
+  padding:6% 4%;
+}
+
+input[type="email"],input[type="password"]{
+  width:92%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+}
+
+input[type="submit"]{
+  width:100%;
+  background:#3399cc;
+  border:0;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:100%;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+input[type="submit"]:hover{
+  background:#2288bb;
+}
